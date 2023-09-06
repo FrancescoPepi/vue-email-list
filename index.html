@@ -49,11 +49,11 @@
     />
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="m-5">
       <button class="btn btn-primary m-2" @click="generaMail()">
         genera lista
       </button>
-      <div v-for="element in mail">{{ element }}</div>
+      <div v-show="mail.length==10" v-for="element in mail">{{ element }}</div>
     </div>
   </body>
 </html>
